@@ -1,0 +1,708 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A ten-question HTML practice quiz with instant feedback, explanations, and scoring. Built with HTML and CSS only."
+    />
+    <meta name="color-scheme" content="light" />
+    <title>HTML Quiz — TagLab</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="top">
+    <a class="skip-link" href="#quiz">Skip to the quiz</a>
+    <header class="site-header wrap">
+      <a class="logo" href="#top" aria-label="TagLab, back to top"
+        ><span aria-hidden="true">&lt;/&gt;</span> taglab</a
+      >
+      <nav class="header-nav" aria-label="Page navigation">
+        <a href="#how-it-works">How it works</a>
+        <a class="small-button" href="#question-1"
+          >Take the quiz <span aria-hidden="true">↗</span></a
+        >
+      </nav>
+    </header>
+    <main class="wrap">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="dot" aria-hidden="true"></span> YOUR NEXT SMALL WIN
+          </p>
+          <h1 id="hero-title">How well do you<br />know <span>HTML?</span></h1>
+          <p class="intro">
+            Ten little questions. One useful check-in.<br />Put the basics to
+            the test, then learn from every answer.
+          </p>
+          <div class="quiz-facts">
+            <span>10 questions</span><span>Beginner friendly</span
+            ><span>About 5 minutes</span>
+          </div>
+        </div>
+        <div class="hero-card" aria-hidden="true">
+          <div class="card-top">
+            <span>YOUR FIRST LANGUAGE</span><span>01</span>
+          </div>
+          <div class="code-symbol">&lt;<span>html</span>&gt;</div>
+          <div class="card-bottom">
+            <span>A little practice.<br />A stronger foundation.</span
+            ><span class="card-star">✳</span>
+          </div>
+        </div>
+      </section>
+      <section
+        class="instructions"
+        id="how-it-works"
+        aria-labelledby="instructions-title"
+      >
+        <h2 id="instructions-title">Make a choice.<br />Make it click.</h2>
+        <ol>
+          <li><span>01</span> Choose one answer for each question.</li>
+          <li><span>02</span> Turn on “Check my answers” at the end.</li>
+          <li><span>03</span> Read the explanations and try again.</li>
+        </ol>
+      </section>
+      <form
+        class="quiz"
+        id="quiz"
+        autocomplete="off"
+        aria-label="HTML knowledge quiz"
+      >
+        <div class="quiz-layout">
+          <div class="questions">
+            <fieldset class="question" id="question-1">
+              <legend>
+                <span class="question-count">01 / 10</span> What is HTML used
+                for?
+              </legend>
+              <p class="topic">The big picture</p>
+              <div class="answers">
+                <label class="answer" for="q1-a">
+                  <input type="radio" id="q1-a" name="q1" value="a" />
+                  <span class="letter">A</span>
+                  <span class="answer-text"
+                    >Making a website look colorful</span
+                  >
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q1-b">
+                  <input
+                    type="radio"
+                    id="q1-b"
+                    name="q1"
+                    value="b"
+                    class="correct"
+                  />
+                  <span class="letter">B</span>
+                  <span class="answer-text"
+                    >Describing the structure and meaning of web content</span
+                  >
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q1-c">
+                  <input type="radio" id="q1-c" name="q1" value="c" />
+                  <span class="letter">C</span>
+                  <span class="answer-text"
+                    >Storing a website in a database</span
+                  >
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q1-d">
+                  <input type="radio" id="q1-d" name="q1" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"
+                    >Adding animations to every element</span
+                  >
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is B.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is B.
+                </p>
+                <p class="explanation">
+                  HTML describes the structure and meaning of a page. CSS
+                  controls its presentation; JavaScript can add behavior.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-2">
+              <legend>
+                <span class="question-count">02 / 10</span> Which element
+                represents the highest-level heading?
+              </legend>
+              <p class="topic">Headings</p>
+              <div class="answers">
+                <label class="answer" for="q2-a">
+                  <input
+                    type="radio"
+                    id="q2-a"
+                    name="q2"
+                    value="a"
+                    class="correct"
+                  />
+                  <span class="letter">A</span>
+                  <span class="answer-text"><code>&lt;h1&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q2-b">
+                  <input type="radio" id="q2-b" name="q2" value="b" />
+                  <span class="letter">B</span>
+                  <span class="answer-text"><code>&lt;head&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q2-c">
+                  <input type="radio" id="q2-c" name="q2" value="c" />
+                  <span class="letter">C</span>
+                  <span class="answer-text"><code>&lt;h6&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q2-d">
+                  <input type="radio" id="q2-d" name="q2" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"><code>&lt;header&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is A.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is A.
+                </p>
+                <p class="explanation">
+                  <code>&lt;h1&gt;</code> is the highest heading level.
+                  <code>&lt;h6&gt;</code> is the lowest. CSS can change how
+                  large either one looks.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-3">
+              <legend>
+                <span class="question-count">03 / 10</span> Which element
+                creates a paragraph?
+              </legend>
+              <p class="topic">Text</p>
+              <div class="answers">
+                <label class="answer" for="q3-a">
+                  <input type="radio" id="q3-a" name="q3" value="a" />
+                  <span class="letter">A</span>
+                  <span class="answer-text"><code>&lt;text&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q3-b">
+                  <input type="radio" id="q3-b" name="q3" value="b" />
+                  <span class="letter">B</span>
+                  <span class="answer-text"
+                    ><code>&lt;paragraph&gt;</code></span
+                  >
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q3-c">
+                  <input
+                    type="radio"
+                    id="q3-c"
+                    name="q3"
+                    value="c"
+                    class="correct"
+                  />
+                  <span class="letter">C</span>
+                  <span class="answer-text"><code>&lt;p&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q3-d">
+                  <input type="radio" id="q3-d" name="q3" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"><code>&lt;section&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is C.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is C.
+                </p>
+                <p class="explanation">
+                  Use <code>&lt;p&gt;</code> for a paragraph:
+                  <code>&lt;p&gt;Hello, world!&lt;/p&gt;</code>.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-4">
+              <legend>
+                <span class="question-count">04 / 10</span> Which attribute
+                gives a link its destination?
+              </legend>
+              <p class="topic">Links</p>
+              <div class="answers">
+                <label class="answer" for="q4-a">
+                  <input
+                    type="radio"
+                    id="q4-a"
+                    name="q4"
+                    value="a"
+                    class="correct"
+                  />
+                  <span class="letter">A</span>
+                  <span class="answer-text"><code>href</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q4-b">
+                  <input type="radio" id="q4-b" name="q4" value="b" />
+                  <span class="letter">B</span>
+                  <span class="answer-text"><code>src</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q4-c">
+                  <input type="radio" id="q4-c" name="q4" value="c" />
+                  <span class="letter">C</span>
+                  <span class="answer-text"><code>alt</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q4-d">
+                  <input type="radio" id="q4-d" name="q4" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"><code>class</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is A.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is A.
+                </p>
+                <p class="explanation">
+                  An anchor uses <code>href</code> for its destination, for
+                  example
+                  <code>&lt;a href="lessons.html"&gt;Lessons&lt;/a&gt;</code>.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-5">
+              <legend>
+                <span class="question-count">05 / 10</span> Which attribute
+                provides a text alternative for an image?
+              </legend>
+              <p class="topic">Images</p>
+              <div class="answers">
+                <label class="answer" for="q5-a">
+                  <input type="radio" id="q5-a" name="q5" value="a" />
+                  <span class="letter">A</span>
+                  <span class="answer-text"><code>title</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q5-b">
+                  <input
+                    type="radio"
+                    id="q5-b"
+                    name="q5"
+                    value="b"
+                    class="correct"
+                  />
+                  <span class="letter">B</span>
+                  <span class="answer-text"><code>alt</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q5-c">
+                  <input type="radio" id="q5-c" name="q5" value="c" />
+                  <span class="letter">C</span>
+                  <span class="answer-text"><code>href</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q5-d">
+                  <input type="radio" id="q5-d" name="q5" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"><code>width</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is B.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is B.
+                </p>
+                <p class="explanation">
+                  The <code>alt</code> attribute provides a text alternative. A
+                  purely decorative image usually has an empty alternative:
+                  <code>alt=""</code>.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-6">
+              <legend>
+                <span class="question-count">06 / 10</span> Which element
+                creates an unordered list?
+              </legend>
+              <p class="topic">Lists</p>
+              <div class="answers">
+                <label class="answer" for="q6-a">
+                  <input type="radio" id="q6-a" name="q6" value="a" />
+                  <span class="letter">A</span>
+                  <span class="answer-text"><code>&lt;ol&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q6-b">
+                  <input type="radio" id="q6-b" name="q6" value="b" />
+                  <span class="letter">B</span>
+                  <span class="answer-text"><code>&lt;li&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q6-c">
+                  <input
+                    type="radio"
+                    id="q6-c"
+                    name="q6"
+                    value="c"
+                    class="correct"
+                  />
+                  <span class="letter">C</span>
+                  <span class="answer-text"><code>&lt;ul&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q6-d">
+                  <input type="radio" id="q6-d" name="q6" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"><code>&lt;list&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is C.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is C.
+                </p>
+                <p class="explanation">
+                  Use <code>&lt;ul&gt;</code> for an unordered list and put each
+                  item inside <code>&lt;li&gt;</code>. An ordered list uses
+                  <code>&lt;ol&gt;</code>.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-7">
+              <legend>
+                <span class="question-count">07 / 10</span> Which element
+                inserts a line break?
+              </legend>
+              <p class="topic">Line breaks</p>
+              <div class="answers">
+                <label class="answer" for="q7-a">
+                  <input type="radio" id="q7-a" name="q7" value="a" />
+                  <span class="letter">A</span>
+                  <span class="answer-text"><code>&lt;break&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q7-b">
+                  <input
+                    type="radio"
+                    id="q7-b"
+                    name="q7"
+                    value="b"
+                    class="correct"
+                  />
+                  <span class="letter">B</span>
+                  <span class="answer-text"><code>&lt;br&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q7-c">
+                  <input type="radio" id="q7-c" name="q7" value="c" />
+                  <span class="letter">C</span>
+                  <span class="answer-text"><code>&lt;lb&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q7-d">
+                  <input type="radio" id="q7-d" name="q7" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"><code>&lt;hr&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is B.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is B.
+                </p>
+                <p class="explanation">
+                  <code>&lt;br&gt;</code> inserts a line break and has no
+                  closing tag. <code>&lt;hr&gt;</code> represents a thematic
+                  break between parts of a page.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-8">
+              <legend>
+                <span class="question-count">08 / 10</span> What must a
+                label&#x27;s for value match to identify an input?
+              </legend>
+              <p class="topic">Forms</p>
+              <div class="answers">
+                <label class="answer" for="q8-a">
+                  <input
+                    type="radio"
+                    id="q8-a"
+                    name="q8"
+                    value="a"
+                    class="correct"
+                  />
+                  <span class="letter">A</span>
+                  <span class="answer-text">The input&#x27;s id</span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q8-b">
+                  <input type="radio" id="q8-b" name="q8" value="b" />
+                  <span class="letter">B</span>
+                  <span class="answer-text">The input&#x27;s name</span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q8-c">
+                  <input type="radio" id="q8-c" name="q8" value="c" />
+                  <span class="letter">C</span>
+                  <span class="answer-text">The input&#x27;s type</span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q8-d">
+                  <input type="radio" id="q8-d" name="q8" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text">The input&#x27;s placeholder</span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is A.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is A.
+                </p>
+                <p class="explanation">
+                  In <code>&lt;label for="email"&gt;Email&lt;/label&gt;</code>,
+                  the value <code>email</code> must match the input's
+                  <code>id="email"</code>.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-9">
+              <legend>
+                <span class="question-count">09 / 10</span> Which element
+                represents a section of navigation links?
+              </legend>
+              <p class="topic">Meaningful HTML</p>
+              <div class="answers">
+                <label class="answer" for="q9-a">
+                  <input type="radio" id="q9-a" name="q9" value="a" />
+                  <span class="letter">A</span>
+                  <span class="answer-text"><code>&lt;menuitem&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q9-b">
+                  <input type="radio" id="q9-b" name="q9" value="b" />
+                  <span class="letter">B</span>
+                  <span class="answer-text"><code>&lt;links&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q9-c">
+                  <input
+                    type="radio"
+                    id="q9-c"
+                    name="q9"
+                    value="c"
+                    class="correct"
+                  />
+                  <span class="letter">C</span>
+                  <span class="answer-text"><code>&lt;nav&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q9-d">
+                  <input type="radio" id="q9-d" name="q9" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"><code>&lt;navigate&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is C.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is C.
+                </p>
+                <p class="explanation">
+                  <code>&lt;nav&gt;</code> represents a section containing
+                  navigation links, such as a site's main menu.
+                </p>
+              </div>
+            </fieldset>
+            <fieldset class="question" id="question-10">
+              <legend>
+                <span class="question-count">10 / 10</span> Which declaration is
+                normally placed at the start of a modern HTML document?
+              </legend>
+              <p class="topic">A good beginning</p>
+              <div class="answers">
+                <label class="answer" for="q10-a">
+                  <input type="radio" id="q10-a" name="q10" value="a" />
+                  <span class="letter">A</span>
+                  <span class="answer-text"
+                    ><code>&lt;html version=&quot;5&quot;&gt;</code></span
+                  >
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q10-b">
+                  <input
+                    type="radio"
+                    id="q10-b"
+                    name="q10"
+                    value="b"
+                    class="correct"
+                  />
+                  <span class="letter">B</span>
+                  <span class="answer-text"
+                    ><code>&lt;!DOCTYPE html&gt;</code></span
+                  >
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q10-c">
+                  <input type="radio" id="q10-c" name="q10" value="c" />
+                  <span class="letter">C</span>
+                  <span class="answer-text"
+                    ><code>&lt;doctype html&gt;</code></span
+                  >
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+                <label class="answer" for="q10-d">
+                  <input type="radio" id="q10-d" name="q10" value="d" />
+                  <span class="letter">D</span>
+                  <span class="answer-text"><code>&lt;?html?&gt;</code></span>
+                  <span class="correct-mark">Correct answer</span>
+                </label>
+              </div>
+              <div class="feedback">
+                <p class="feedback-right">Correct — nicely done.</p>
+                <p class="feedback-wrong">
+                  Not quite. The correct answer is B.
+                </p>
+                <p class="feedback-empty">
+                  Not answered. The correct answer is B.
+                </p>
+                <p class="explanation">
+                  <code>&lt;!DOCTYPE html&gt;</code> is the modern HTML doctype.
+                  It tells browsers to use standards mode.
+                </p>
+              </div>
+            </fieldset>
+          </div>
+          <aside class="side-panel" aria-label="Quiz guide">
+            <div class="sticky-note">
+              <p class="eyebrow">ONE QUESTION AT A TIME</p>
+              <h2>You know more<br />than you think.</h2>
+              <p>
+                Take your time. This is practice, so you can change an answer
+                whenever something clicks.
+              </p>
+              <nav class="question-nav" aria-label="Jump to a question">
+                <a href="#question-1" aria-label="Go to question 1">01</a>
+                <a href="#question-2" aria-label="Go to question 2">02</a>
+                <a href="#question-3" aria-label="Go to question 3">03</a>
+                <a href="#question-4" aria-label="Go to question 4">04</a>
+                <a href="#question-5" aria-label="Go to question 5">05</a>
+                <a href="#question-6" aria-label="Go to question 6">06</a>
+                <a href="#question-7" aria-label="Go to question 7">07</a>
+                <a href="#question-8" aria-label="Go to question 8">08</a>
+                <a href="#question-9" aria-label="Go to question 9">09</a>
+                <a href="#question-10" aria-label="Go to question 10">10</a>
+              </nav>
+              <a class="review-link" href="#review"
+                >Ready? Check your answers <span aria-hidden="true">↓</span></a
+              >
+            </div>
+            <div class="keyboard-note">
+              <span aria-hidden="true">⌨</span>
+              <p>
+                <strong>Keyboard friendly.</strong><br />Use Tab to move between
+                questions and arrow keys to choose an answer.
+              </p>
+            </div>
+          </aside>
+        </div>
+        <section class="review-card" id="review" aria-labelledby="review-title">
+          <div>
+            <p class="eyebrow">THE MOMENT OF TRUTH</p>
+            <h2 id="review-title">Ready to see how you did?</h2>
+            <p>
+              Unanswered questions count as zero. You can still change your
+              choices after checking.
+            </p>
+          </div>
+          <label class="check-button" for="check-answers"
+            ><input
+              class="check-toggle"
+              type="checkbox"
+              id="check-answers"
+              aria-controls="results"
+            /><span>Check my answers</span></label
+          >
+        </section>
+        <section class="results" id="results" aria-labelledby="results-title">
+          <div class="result-top">
+            <div>
+              <p class="eyebrow">YOUR HTML CHECK-IN</p>
+              <h2 id="results-title">Every answer is a step forward.</h2>
+              <p class="answered-line">
+                Answered: <span class="answered-count"></span> out of 10.
+              </p>
+            </div>
+            <p class="score" aria-label="Quiz score">
+              <strong class="score-count"></strong
+              ><span> / 10<br /><small>correct answers</small></span>
+            </p>
+          </div>
+          <p>
+            Your score updates when you change a choice. Each question now shows
+            the correct answer and an explanation.
+          </p>
+          <div class="result-actions">
+            <a class="button" href="#question-1"
+              >Review my answers <span aria-hidden="true">↑</span></a
+            ><button type="reset" class="button secondary">
+              Start again <span aria-hidden="true">↺</span>
+            </button>
+          </div>
+        </section>
+        <p class="support-note">
+          This quiz uses modern CSS features. If results do not appear, try a
+          current version of your browser.
+        </p>
+      </form>
+    </main>
+    <footer class="site-footer wrap">
+      <a class="logo" href="#top"
+        ><span aria-hidden="true">&lt;/&gt;</span> taglab</a
+      >
+      <p>A small start. A whole new skill.</p>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </body>
+</html>
